@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Yummy</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="mainSideBar w-25 bg-light position-absolute h-100 overflow-hidden">
+            <!-- hide sidebar -->
+            <div
+                class="hideSideBar bg-black w-75 d-flex flex-column align-content-center justify-content-between position-absolute top-0 bottom-0">
+                <div class="hideLinks">
+                    <ul class="list-unstyled d-flex flex-column">
+                        <li class="mt-2">
+                            <a class="text-decoration-none" href="search.html">search</a>
+                        </li>
+                        <li class="mt-2">
+                            <a  class="text-decoration-none" href="categories.html">Categories</a>
+                        </li>
+                        <li class="mt-2">
+                            <a class="text-decoration-none" href="ingredients.html">Ingredients</a>
+                        </li>
+                        <li class="mt-2">
+                            <a class="text-decoration-none" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hideFooter">
+                    <div class="hideicons">
+                        <i href="#" class="fa-brands fa-facebook-f"></i>
+                        <i href="#" class="fa-brands fa-x"></i>
+                        <i href="#" class="fa-brands fa-youtube"></i>
+                    </div>
+                    <p>Copyright © 2019 All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+            <!-- visible sidebar-->
+            <div
+                class="visibleSideBar w-25 d-flex flex-column align-content-center justify-content-between position-absolute top-0 bottom-0 end-0">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Yummy logo" class="img-fluid">
+                </div>
+                <!--  toggle button -->
+                <button id="toggleSidebar" class="btn btn-light fs-4" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- visble icons -->
+                <div class="visbleIcons">
+                    <ul class="list-unstyled d-flex flex-column align-items-center">
+                        <li>
+                            <a href=""><i class="fas fa-share"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-globe"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mainContent">
+        <div class="container pt-5 ps-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card bg-dark text-light p-4">
+                        <h2 class="text-center mb-4">Contact Us</h2>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Please enter a valid name (3-30 characters)</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please enter a valid email address</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                                <div class="invalid-feedback">Please enter a valid Egyptian phone number</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                                <div class="invalid-feedback">Message must be between 10-500 characters</div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-100" id="submitBtn" disabled>Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    
+    
+</body>
+</html>

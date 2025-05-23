@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External CSS dependencies -->
+    <!-- Bootstrap CSS framework -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome icons library -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <section>
+        <div class="mainSideBar w-25 bg-light position-absolute h-100 overflow-hidden">
+            <!-- hide sidebar -->
+            <div
+                class="hideSideBar bg-black w-75 d-flex flex-column align-content-center justify-content-between position-absolute top-0 bottom-0">
+                <div class="hideLinks">
+                    <ul class="list-unstyled d-flex flex-column">
+                        <li class="mt-2">
+                            <a class="text-decoration-none" href="search.html">search</a>
+                        </li>
+                        <li class="mt-2">
+                            <a  class="text-decoration-none" href="categories.html">Categories</a>
+                        </li>
+                        <li class="mt-2">
+                            <a class="text-decoration-none" href="ingredients.html">Ingredients</a>
+                        </li>
+                        <li class="mt-2">
+                            <a class="text-decoration-none" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hideFooter">
+                    <div class="hideicons">
+                        <i href="#" class="fa-brands fa-facebook-f"></i>
+                        <i href="#" class="fa-brands fa-x"></i>
+                        <i href="#" class="fa-brands fa-youtube"></i>
+                    </div>
+                    <p>Copyright © 2019 All Rights
+                        Reserved.</p>
+                </div>
+            </div>
+            <!-- visible sidebar-->
+            <div
+                class="visibleSideBar w-25 d-flex flex-column align-content-center justify-content-between position-absolute top-0 bottom-0 end-0">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Yummy logo" class="img-fluid">
+                </div>
+                <!--  toggle button -->
+                <button id="toggleSidebar" class="btn btn-light fs-4" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <!-- visble icons -->
+                <div class="visbleIcons">
+                    <ul class="list-unstyled d-flex flex-column align-items-center">
+                        <li>
+                            <a href=""><i class="fas fa-share"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fas fa-globe"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row mt-2 align-items-center justify-content-center g-2" id="categoryMealsContainer">
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/home.js"></script>
+    <script type="module" src="js/categories.js"></script>
+    <script type="module" src="js/search.js"></script>
+    <script type="module" src="js/mealdetails.js"></script>
+</body>
+
+</html>

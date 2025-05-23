@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character encoding and responsive viewport -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- External CSS dependencies -->
+        <!-- Bootstrap CSS framework -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Font Awesome icons library -->
+        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Yummy</title>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="search-inputs row mt-5 align-items-center justify-content-center text-light" id="searchInputs">
+            <div class="col-6">
+                <input type="text"  class="form-control" id="searchInput1" placeholder="Search for a meal by full name...">
+            </div>
+            <div class="col-6">
+                <input type="text" class="form-control" id="searchInput2" placeholder="Search for a meal by First Letter...">
+            </div>
+        </div>
+        <div class="row m-2 justify-content-center align-items-center g-2 search-results" id="searchResults">
+            <!-- Search results will be dynamically inserted here -->
+            <div class="loader-container">
+                <span class="loader"></span>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <!-- External JavaScript dependencies -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/search.js"></script>
+    <script type="module" src="js/mealdetails.js"></script>
+
+</body>
+</html>
