@@ -39,7 +39,7 @@ export function openCard() {
         mealItem.addEventListener('click', function() {
             const mealId = this.getAttribute('data-id');
             if (mealId) {
-                window.location.href = `meal.html?id=${encodeURIComponent(mealId)}`;
+                window.location.href = `meal.html?id=${(mealId)}`;
             }
         });
     });
